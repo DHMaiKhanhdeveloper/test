@@ -201,14 +201,17 @@
 
         </LinearLayout>
 
-
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/idGraphView1"
+            android:layout_width="45dp"
+            android:layout_height="match_parent" />
 
         <Button
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="@drawable/botron_butto"
             android:text="Hot"
-            android:layout_marginLeft="45dp"
+
             android:textColor="@color/white"
             android:textSize="10dp"
             android:layout_marginBottom="6dp"/>
@@ -266,6 +269,10 @@
 
         </LinearLayout>
 
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/idGraphView"
+            android:layout_width="45dp"
+            android:layout_height="match_parent" />
 
 
         <Button
@@ -273,7 +280,7 @@
             android:layout_height="70dp"
             android:background="@drawable/botron_butto"
             android:text="Hot"
-            android:layout_marginLeft="45dp"
+
             android:textColor="@color/white"
             android:textSize="10dp"
             />
