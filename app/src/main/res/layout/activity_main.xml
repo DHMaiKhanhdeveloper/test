@@ -150,38 +150,35 @@
 
     </LinearLayout>
     <LinearLayout
-        style="@style/Theme.Design.Light.NoActionBar"
+
         android:layout_margin="20dp"
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-      android:gravity="center"
+        android:gravity="center"
         android:orientation="vertical"
         android:layout_below="@+id/l3"
-        android:id="@+id/l4">
+        android:id="@+id/l5">
 
         <Button
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:background="@drawable/botron_butto"
-        android:text="Text" android:textSize="10dp"
-        android:backgroundTint="@color/material_dynamic_primary40"
-
-        android:layout_marginBottom="10dp"/>
-
-        <Button
-
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="@drawable/botron_butto"
             android:text="Text"
             android:textSize="10dp"
 
-            app:strokeColor="@color/teal_200"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/botron_butto"
+            android:text="Text"
+            android:textSize="10dp"
+
+
             android:layout_marginBottom="10dp"/>
 
         <Button
-
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="@drawable/red_button"
@@ -189,10 +186,9 @@
             android:text="Text"
             android:textSize="10dp"
 
-            app:strokeColor="@color/teal_200"
+
             android:layout_marginBottom="10dp"/>
         <Button
-
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="@drawable/botron_butto"
@@ -207,9 +203,7 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/yellow_button"
             android:text="Text"
-            android:textSize="10dp"
-
-            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar" />
+            android:textSize="10dp" />
 
 
     </LinearLayout>
@@ -219,7 +213,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:keepScreenOn="true"
-        tools:context=".MainActivity">
+        >
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomnavigation"
