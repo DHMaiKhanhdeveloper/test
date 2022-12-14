@@ -11,39 +11,7 @@
     android:background="@drawable/images">
 
 
-        <androidx.coordinatorlayout.widget.CoordinatorLayout
 
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <FrameLayout
-                android:id="@+id/frame"
-                android:layout_width="match_parent"
-                android:layout_height="731dp" />
-
-            <com.google.android.material.bottomappbar.BottomAppBar
-
-                android:id="@+id/bottomAppBar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                app:fabCradleMargin="20dp"
-                app:fabCradleRoundedCornerRadius="20dp"
-                app:fabCradleVerticalOffset="20dp"
-                app:layout_anchor="@+id/frame"
-                app:layout_anchorGravity="bottom|center">
-
-                <com.google.android.material.bottomnavigation.BottomNavigationView
-
-                    android:id="@+id/bottomNavigationView"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginEnd="20dp"
-                    android:background="@android:color/transparent"
-                    app:menu="@menu/bottom_nav_menu" />
-
-            </com.google.android.material.bottomappbar.BottomAppBar>
-        </androidx.coordinatorlayout.widget.CoordinatorLayout>
     <LinearLayout
         android:layout_margin="20dp"
         android:layout_centerInParent="true"
@@ -182,6 +150,7 @@
 
     </LinearLayout>
     <LinearLayout
+        style="@style/Theme.Design.Light.NoActionBar"
         android:layout_margin="20dp"
         android:layout_centerInParent="true"
         android:layout_width="wrap_content"
@@ -192,23 +161,22 @@
         android:id="@+id/l4">
 
         <Button
-        android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:background="@drawable/botron_butto"
-        android:text="Text"
-            android:textSize="10dp"
-        android:backgroundTint="@color/teal_200"
+        android:text="Text" android:textSize="10dp"
+        android:backgroundTint="@color/material_dynamic_primary40"
+
         android:layout_marginBottom="10dp"/>
 
         <Button
-            android:theme="@style/Theme.Material3.DayNight"
+
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:background="@drawable/botron_butto"
             android:text="Text"
             android:textSize="10dp"
-            android:backgroundTint="@color/teal_200"
+
             app:strokeColor="@color/teal_200"
             android:layout_marginBottom="10dp"/>
 
@@ -216,10 +184,11 @@
 
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:background="@drawable/botron_butto"
+            android:background="@drawable/red_button"
+
             android:text="Text"
             android:textSize="10dp"
-            android:backgroundTint="@color/teal_200"
+
             app:strokeColor="@color/teal_200"
             android:layout_marginBottom="10dp"/>
         <Button
@@ -231,21 +200,39 @@
             android:textSize="10dp"
             android:backgroundTint="@color/teal_200"
             android:layout_marginBottom="10dp"/>
+
         <Button
-            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
             android:layout_width="70dp"
             android:layout_height="70dp"
-            android:background="@drawable/botron_butto"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/yellow_button"
             android:text="Text"
             android:textSize="10dp"
-            android:backgroundTint="@color/teal_200"
-            android:layout_marginBottom="10dp"/>
 
-
-
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar" />
 
 
     </LinearLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:keepScreenOn="true"
+        tools:context=".MainActivity">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="?android:attr/windowBackground"
+            android:foreground="?attr/selectableItemBackground"
+            app:itemIconTint="@color/custom_icon_bottom_navigation"
+            app:itemTextColor="@color/custom_icon_bottom_navigation"
+            app:menu="@menu/bottom_nav_menu" />
+
+    </RelativeLayout>
 
 
 
