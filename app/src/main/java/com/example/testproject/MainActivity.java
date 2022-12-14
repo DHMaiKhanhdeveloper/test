@@ -15,13 +15,14 @@ import com.jjoe64.graphview.series.LineGraphSeries;
 public class MainActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNavigationView;
-    private GraphView graphView;
+    private GraphView graphView1,graphView2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        graphView = findViewById(R.id.idGraphView);
+        graphView1 = findViewById(R.id.idGraphView1);
+        graphView2 = findViewById(R.id.idGraphView);
 
         // on below line we are adding data to our graph view.
         LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(new DataPoint[]{
@@ -35,21 +36,15 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        // after adding data to our line graph series.
-        // on below line we are setting
-        // title for our graph view.
 
 
-        // on below line we are setting
-        // text color to our graph view.
-        graphView.setTitleColor(R.color.purple_200);
 
-        // on below line we are setting
-        // our title text size.
-        graphView.setTitleTextSize(18);
+        graphView1.setTitleColor(R.color.purple_200);
+        graphView1.setTitleTextSize(5);
+        graphView1.addSeries(series);
 
-        // on below line we are adding
-        // data series to our graph view.
-        graphView.addSeries(series);
+        graphView2.setTitleColor(R.color.purple_200);
+        graphView2.setTitleTextSize(5);
+        graphView2.addSeries(series);
     }
 }
