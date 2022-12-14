@@ -149,205 +149,273 @@
 
     </LinearLayout>
     <LinearLayout
-        android:id="@+id/l7"
-        android:orientation="horizontal"
-        android:layout_gravity="left"
-        android:layout_below="@+id/l3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="15dp"
-
-            android:src="@drawable/ic_home"/>
-    <LinearLayout
-        android:id="@+id/l8"
-        android:orientation="vertical"
-        android:layout_gravity="left"
-        android:layout_below="@+id/l3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_keyboard_arrow_up_24"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
-
-
-    </LinearLayout>
-        <LinearLayout
-            android:id="@+id/l9"
-            android:orientation="vertical"
-            android:layout_gravity="left"
-            android:layout_below="@+id/l3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-               android:text="L 24.5"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="L 24.5"/>
-
-
-
-        </LinearLayout>
-
-        <com.jjoe64.graphview.GraphView
-            android:id="@+id/idGraphView1"
-            android:layout_width="45dp"
-            android:layout_height="match_parent" />
-
-        <Button
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/botron_butto"
-            android:text="Hot"
-
-            android:textColor="@color/white"
-            android:textSize="10dp"
-            android:layout_marginBottom="6dp"/>
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/l10"
-        android:orientation="horizontal"
-        android:layout_gravity="left"
-        android:layout_below="@+id/l7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_marginLeft="15dp"
-
-            android:src="@drawable/ic_home"/>
-        <LinearLayout
-
-            android:orientation="vertical"
-            android:layout_gravity="left"
-            android:layout_below="@+id/l3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_keyboard_arrow_up_24"/>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
-
-
-        </LinearLayout>
-        <LinearLayout
-
-            android:orientation="vertical"
-            android:layout_gravity="left"
-            android:layout_below="@+id/l3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="L 24.5"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:text="L 24.5"/>
-
-
-
-        </LinearLayout>
-
-        <com.jjoe64.graphview.GraphView
-            android:id="@+id/idGraphView"
-            android:layout_width="45dp"
-            android:layout_height="match_parent" />
-
-
-        <Button
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/botron_butto"
-            android:text="Hot"
-
-            android:textColor="@color/white"
-            android:textSize="10dp"
-            />
-    </LinearLayout>
-    <LinearLayout
-
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:layout_below="@+id/l10"
-        android:layout_centerInParent="true"
-        android:layout_gravity="center"
-        android:id="@+id/l5">
+        android:layout_below="@+id/l3">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_weight="1">
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
 
 
-    <LinearLayout
-        android:layout_margin="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:layout_centerInParent="true"
-        android:layout_gravity="center"
-        android:id="@+id/l6">
+                android:layout_gravity="center"
+                >
+
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+
+                    android:layout_gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/l7"
+                        android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_below="@+id/l3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="15dp"
+
+                            android:src="@drawable/ic_home"/>
+                        <LinearLayout
+                            android:id="@+id/l8"
+                            android:orientation="vertical"
+                            android:layout_gravity="left"
+                            android:layout_below="@+id/l3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_baseline_keyboard_arrow_up_24"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/l9"
+                            android:orientation="vertical"
+                            android:layout_gravity="left"
+                            android:layout_below="@+id/l3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="L 24.5"
+                                android:textColor="@color/black" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="L 24.5"/>
+
+
+
+                        </LinearLayout>
 
 
 
 
-        <Button
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/red_button"
-            android:text="Text"
-            android:textSize="10dp"
-            android:textColor="@color/white"
-            android:layout_marginBottom="6dp"/>
-        <Button
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:background="@drawable/botron_butto"
-            android:text="Text"
-            android:textSize="10dp"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/teal_200"
-            android:layout_marginBottom="6dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/l12"
+                        android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_below="@+id/l7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
-        <Button
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginBottom="6dp"
-            android:background="@drawable/yellow_button"
-            android:text="Text"
-            android:textColor="@color/white"
-            android:textSize="10dp" />
-        <Button
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginBottom="6dp"
-            android:background="@drawable/yellow_button"
-            android:text="Text"
-            android:textColor="@color/white"
-            android:textSize="10dp" />
+                        <com.jjoe64.graphview.GraphView
+                            android:id="@+id/idGraphView1"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentTop="true" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/l10"
+                        android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_below="@+id/l12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="15dp"
+
+                            android:src="@drawable/ic_home"/>
+                        <LinearLayout
+
+                            android:orientation="vertical"
+                            android:layout_gravity="left"
+                            android:layout_below="@+id/l3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_baseline_keyboard_arrow_up_24"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_baseline_keyboard_arrow_down_24"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+
+                            android:orientation="vertical"
+                            android:layout_gravity="left"
+                            android:layout_below="@+id/l3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="L 24.5"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/black"
+                                android:text="L 24.5"/>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/l11"
+                        android:orientation="horizontal"
+                        android:layout_gravity="left"
+                        android:layout_below="@+id/l10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <com.jjoe64.graphview.GraphView
+                            android:id="@+id/idGraphView2"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentTop="true" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_weight="1">
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+
+
+            android:layout_gravity="center"
+            android:id="@+id/l5">
+
+
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+
+                android:layout_gravity="center"
+                android:id="@+id/l6">
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/botron_butto"
+                    android:text="Hot"
+
+                    android:textColor="@color/white"
+                    android:textSize="10dp"
+                    android:layout_marginBottom="6dp"/>
+
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/red_button"
+                    android:text="Text"
+                    android:textSize="10dp"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="6dp"/>
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/botron_butto"
+                    android:text="Text"
+                    android:textSize="10dp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/teal_200"
+                    android:layout_marginBottom="6dp"/>
+
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/yellow_button"
+                    android:text="Text"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/yellow_button"
+                    android:text="Text"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+                <Button
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/botron_butto"
+                    android:text="Text"
+                    android:textSize="10dp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/teal_200"
+                    android:layout_marginBottom="6dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        </LinearLayout>
+
+
     </LinearLayout>
 
 
-    </LinearLayout>
 
     <RelativeLayout
 
@@ -367,9 +435,6 @@
             app:menu="@menu/bottom_nav_menu" />
 
     </RelativeLayout>
-
-
-
 
 </RelativeLayout>
 

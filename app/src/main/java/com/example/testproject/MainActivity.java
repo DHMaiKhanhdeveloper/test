@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         graphView1 = findViewById(R.id.idGraphView1);
-        graphView2 = findViewById(R.id.idGraphView);
+        graphView2 = findViewById(R.id.idGraphView2);
 
         // on below line we are adding data to our graph view.
         LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(new DataPoint[]{
