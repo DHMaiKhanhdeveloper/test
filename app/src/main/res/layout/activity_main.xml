@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="@drawable/images">
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/frame"
+                android:layout_width="match_parent"
+                android:layout_height="731dp" />
+
+            <com.google.android.material.bottomappbar.BottomAppBar
+
+                android:id="@+id/bottomAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:fabCradleMargin="20dp"
+                app:fabCradleRoundedCornerRadius="20dp"
+                app:fabCradleVerticalOffset="20dp"
+                app:layout_anchor="@+id/frame"
+                app:layout_anchorGravity="bottom|center">
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+
+                    android:id="@+id/bottomNavigationView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="20dp"
+                    android:background="@android:color/transparent"
+                    app:menu="@menu/bottom_nav_menu" />
+
+            </com.google.android.material.bottomappbar.BottomAppBar>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:id="@+id/l1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="Living Room"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_home"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+        <LinearLayout
+            android:id="@+id/l2"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/l1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_home"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+
+                    android:layout_gravity="center_vertical"
+                    android:text="26.5"/>
+
+            </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_home"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="15dp"
+                android:text="83.6%"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+
+                android:src="@drawable/ic_home"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="15dp"
+                android:text="Too Warm"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_below="@+id/l2"
+        android:id="@+id/l3">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="14.49.14"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:text="Comfort Mode"
+            android:layout_marginRight="10dp"/>
+        <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_home"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@+id/l3"
+        android:id="@+id/l4">
+
+        <Button
+        android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/botron_butto"
+        android:text="Text"
+            android:textSize="10dp"
+        android:backgroundTint="@color/teal_200"
+        android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:theme="@style/Theme.Material3.DayNight"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/botron_butto"
+            android:text="Text"
+            android:textSize="10dp"
+            android:backgroundTint="@color/teal_200"
+            app:strokeColor="@color/teal_200"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/botron_butto"
+            android:text="Text"
+            android:textSize="10dp"
+            android:backgroundTint="@color/teal_200"
+            app:strokeColor="@color/teal_200"
+            android:layout_marginBottom="10dp"/>
+        <Button
+
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/botron_butto"
+            android:text="Text"
+            android:textSize="10dp"
+            android:backgroundTint="@color/teal_200"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@drawable/botron_butto"
+            android:text="Text"
+            android:textSize="10dp"
+            android:backgroundTint="@color/teal_200"
+            android:layout_marginBottom="10dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>
+
